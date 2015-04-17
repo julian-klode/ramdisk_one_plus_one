@@ -575,6 +575,9 @@
 
 /persist/.genmac                                u:object_r:wifi_data_file:s0
 /persist/.bt_nv.bin                             u:object_r:bluetooth_data_file:s0
+#line 1 "vendor/prebundled/common/sepolicy/file_contexts"
+/data/misc/cyngn/prebundle                      u:object_r:prebundle_data_file:s0
+/system/vendor/bin/install-apps                 u:object_r:prebundle_installer_exec:s0
 #line 1 "vendor/cm/sepolicy/file_contexts"
 /cache/dalvik-cache(/.*)? u:object_r:dalvikcache_data_file:s0
 
